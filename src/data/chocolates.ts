@@ -106,7 +106,7 @@ export const chocolates: Chocolate[] = [
     cacaoPercentage: "70% Cacao",
     priceAED: 45,
     category: "Dark",
-    image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1604514813549-92e26bbae4f2?auto=format&fit=crop&w=800&q=80",
     badge: "Spiced & Zesty",
     ingredients: ["70% Single Origin Cocoa", "Valencia Orange Peel", "Natural Orange Blossom Water", "Smoked Chipotle"],
     weight: "100g",
