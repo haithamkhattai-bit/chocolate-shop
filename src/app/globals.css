@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  --bg-cream: #FAF6F0;
+  --bg-cream-card: #FFFFFF;
+  --bg-cream-subtle: #F3ECE1;
+  --border-cream: #EADDC9;
+  
+  --cocoa-deep: #1A0C06;
+  --cocoa-dark: #2A150C;
+  --cocoa-rich: #3E2012;
+  --cocoa-milk: #5C331E;
+  --cocoa-warm: #7E4B2F;
+  --cocoa-text: #2E170E;
+  --cocoa-muted: #6E5B52;
+  
+  --gold-primary: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-soft: #F9F4E3;
+  --gold-hover: #BF9B27;
+  --gold-dark: #8C6D1F;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--cocoa-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom Gold Shimmer Effect */
+.gold-shimmer {
+  background: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #FFF2B2 45%,
+    #D4AF37 70%,
+    #AA8621 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #C49E2B 50%, #997D26 100%);
+}
+
+.gold-gradient-subtle {
+  background: linear-gradient(135deg, #FDF8EC 0%, #F5ECDA 100%);
+}
+
+.cocoa-gradient-bg {
+  background: linear-gradient(145deg, #2A150C 0%, #1A0C06 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(42, 21, 12, 0.08), 0 4px 12px -2px rgba(42, 21, 12, 0.04);
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 20px 35px -8px rgba(42, 21, 12, 0.16), 0 8px 16px -4px rgba(212, 175, 55, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C49E2B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #997D26;
+}
